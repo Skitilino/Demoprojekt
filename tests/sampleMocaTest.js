@@ -18,7 +18,7 @@ describe('#sum()', function () {
 
     // test a functionality
     it('should add numbers', function () {
-        expect(sum([1, 2, 3, 4, 5])).to.equal(15);
+        expect(sum([10, 35])).to.equal(45);
     })
     it('should return 0 for an empty array', function () {
         expect(sum([])).to.equal(0);
