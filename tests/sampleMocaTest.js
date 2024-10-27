@@ -20,5 +20,17 @@ describe('#sum()', function () {
     it('should add numbers', function () {
         expect(sum([1, 2, 3, 4, 5])).to.equal(15);
     })
+    it('should return 0 for an empty array', function () {
+        expect(sum([])).to.equal(0);
+    });
+    
+    it('should return the correct sum for negative numbers', function () {
+        expect(sum([-1, -2, -3])).to.equal(-6);
+    });
+    
+    it('should handle an array with a single element', function () {
+        expect(sum([10])).to.equal(10);
+    });
+    
 
 });
